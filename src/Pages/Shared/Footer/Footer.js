@@ -3,13 +3,12 @@ import "./Footer.css";
 
 const Footer = () => {
 
-    const getCurrentYear = () => {
-        return new Date().getFullYear();
-    }
+    const today = new Date();
+    const year = today.getFullYear()
 
     return (
-        <footer>
-            <p><small>All rights reserved by @ratulinspace | {new Date().getFullYear()}</small></p>
+        <footer className="text-center mt-5">
+            <p><small>All rights reserved by @ratulinspace | {year}</small></p>
         </footer>
     );
 };

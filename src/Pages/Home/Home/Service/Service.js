@@ -1,4 +1,5 @@
 import React from 'react';
+import { Button } from 'react-bootstrap';
 import "./Service.css";
 
 const Service = ({ service }) => {
@@ -7,11 +8,12 @@ const Service = ({ service }) => {
 
     return (
         <div className='service'>
-            <img src={img} alt="" />
-            <h2>{name}</h2>
-            <h4>Price: {price}</h4>
+            <img className="w-100" src={img} alt="" />
+            <h4>{name}</h4>
+            <h6>Price: {price}</h6>
             <p><small>{description}</small></p>
-            <button>Book {name}</button>
+            <Button className="p-1 px-3" variant="dark"><small>Book {name}</small></Button>{' '}
+            {/* <button>Book {name}</button> */}
         </div>
     );
 };
