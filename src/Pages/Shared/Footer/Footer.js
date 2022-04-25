@@ -8,7 +8,7 @@ const Footer = () => {
 
     return (
         <footer className="text-center mt-5">
-            <p><small>All rights reserved by @ratulinspace | {year}</small></p>
+            <p><small>A test project by @ratulinspace | {year}</small></p>
         </footer>
     );
 };
