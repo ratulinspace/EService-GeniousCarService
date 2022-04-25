@@ -9,11 +9,19 @@ const Register = () => {
     const navigateLogin = () => {
         navigate('/login')
     }
+    const handleRegister = event => {
+
+        event.preventDefault();
+
+        const name = event.target.name.value;
+        const email = event.target.email.value;
+        const password = event.target.password.value;
+    }
 
     return (
         <div className="container w-50 mx-auto mt-3">
             <h3 className="text-center">Register now</h3>
-            <Form>
+            <Form onSubmit={handleRegister}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Your name</Form.Label>
                     <Form.Control type="text" placeholder="Enter your name" required />
