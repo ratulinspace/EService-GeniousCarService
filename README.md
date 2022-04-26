@@ -4,9 +4,13 @@
 * Firebase
 * reactRouter
 * BootsStrap css
-
-A project by @ratulinspace | 2022
+* react firebase hooks
 
 ### inDetails:
-- [x] favIcon
 - [x] responsive for large and small screen
+- [x] fav icon
+- [x] email auth OK
+- [x] RequiredAuth and protected route created
+
+
+A project by @ratulinspace | 2022
