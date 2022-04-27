@@ -11,6 +11,7 @@
 - [x] fav icon
 - [x] email auth OK
 - [x] RequiredAuth and protected route created
+- [x] Google, Facebook and github login and sign in system
 
 
 A project by @ratulinspace | 2022

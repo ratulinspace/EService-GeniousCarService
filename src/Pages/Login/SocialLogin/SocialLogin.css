@@ -1,0 +1,10 @@
+.btn-dgn-google {
+    background-color: whitesmoke;
+    padding: 7px;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+}
+
+.btn-dgn-google:hover {
+    background-color: white;
+}
