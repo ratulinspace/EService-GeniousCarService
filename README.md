@@ -5,6 +5,7 @@
 * reactRouter
 * BootsStrap css
 * react firebase hooks
+* react toast
 
 ### inDetails:
 - [x] responsive for large and small screen

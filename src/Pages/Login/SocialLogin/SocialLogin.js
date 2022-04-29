@@ -6,12 +6,13 @@ import logo3 from "../../../images/social/github-logo.png";
 import { useSignInWithFacebook, useSignInWithGithub, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import auth from "../../../firebase.init";
 import { useNavigate } from 'react-router-dom';
+import Loading from '../../Shared/Loading/Loading';
 
 const SocialLogin = () => {
 
-    const [signInWithGoogle, user, error] = useSignInWithGoogle(auth);
-    const [signInWithGithub, user1, error1] = useSignInWithGithub(auth);
-    const [signInWithFacebook, user2, error2] = useSignInWithFacebook(auth);
+    const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
+    const [signInWithGithub, user1, loading1, error1] = useSignInWithGithub(auth);
+    const [signInWithFacebook, user2, loading2, error2] = useSignInWithFacebook(auth);
     const navigate = useNavigate();
 
     let errorElement;
@@ -21,6 +22,10 @@ const SocialLogin = () => {
 
     if (user || user1 || user2) {
         navigate('/home');
+    }
+
+    if (loading || loading1 || loading2) {
+        return <Loading></Loading>;
     }
 
     return (
